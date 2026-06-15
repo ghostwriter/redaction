@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Tests\Unit\Exception;
 
-use Ghostwriter\Wip\Exception\ShouldNotHappenException;
-use Ghostwriter\Wip\Interface\ExceptionInterface;
+use Ghostwriter\Redaction\Exception\ShouldNotHappenException;
+use Ghostwriter\Redaction\Interface\RedactionExceptionInterface;
 use LogicException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use Tests\Unit\AbstractTestCase;
@@ -26,6 +26,6 @@ final class ShouldNotHappenExceptionTest extends AbstractTestCase
     /** @throws Throwable */
     public function testImplementsExceptionInterface(): void
     {
-        self::assertTrue(is_a(ShouldNotHappenException::class, ExceptionInterface::class, true));
+        self::assertTrue(is_a(ShouldNotHappenException::class, RedactionExceptionInterface::class, true));
     }
 }

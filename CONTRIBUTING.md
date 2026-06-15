@@ -20,7 +20,7 @@ Fork the project on GitHub and check out your copy locally.
 
 ```bash
 git clone git@github.com:ghostwriter/redaction.git
-cd wip
+cd redaction
 git remote add upstream git://github.com/ghostwriter/redaction.git
 ```
 
