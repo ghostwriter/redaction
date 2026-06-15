@@ -29,6 +29,7 @@ You can also star (🌟) this repo to find it easier later.
 ```php
 use Ghostwriter\Redaction\Redactor;
 use Ghostwriter\Redaction\Rules;
+use Ghostwriter\Redaction\Rule;
 
 ###################################################
 # Default redaction
@@ -64,7 +65,7 @@ $customRules = [
 ];
 
 $rules = Rules::new($customRules);
-$rules->add('#another_pattern#iu', '**another_replacement**');
+$rules->add(Rule::new('#another_pattern#iu', '**another_replacement**'));
 
 $redactor = new Redactor($rules);
 
